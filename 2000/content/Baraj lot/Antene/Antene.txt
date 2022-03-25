@@ -1,0 +1,60 @@
+
+
+
+
+			ANTENE
+		       --------
+
+	Firmele de telefonie mobila DIALOG si CONNEX urmeaza sa-si instaleze antene satelit
+intr-un spatiu comun. In acest scop se realizeaza o harta sub forma unui caroiaj dreptun-
+ghiular, unde se dau N puncte prin coordonate naturale, reprezentand punctele in care
+vor fi instalate antene pentru cele doua firme.
+	Managerul Oficiului Concurentei doreste ca nici una din firme sa nu fie dezavanta-
+jata. Astfel, ea stabileste urmatoarea conditie care trebuie respectata:
+- orice dreapta paralela cu axa Ox sau Oy trasata printr-un punct de coordonate naturale
+intersecteaza un numar de antene al firmei CONNEX, numar care difera cu cel mult 1 de nu-
+marul de antene al firmei DIALOG intersectate de aceeasi dreapta. Atfel spus, modulul di-
+ferentei dintre numarul antenelor CONNEX si numarul antenelor DIALOG situate pe aceeasi
+dreapta este cel mult 1.
+
+Cerinta:
+--------
+	Cunoscandu-se coordonatele celor N puncte, sa se realizeze o distribuire a
+tuturor punctelor intre cele doua firme, astfel incat restrictia impusa de managerul
+Oficiului Concurentei sa fie respectata.
+
+DATE DE INTRARE:
+----------------
+- Prima linie a fisierului de intrare ANTENE.IN contine numarul de puncte (N).
+- Pe fiecare din urmatoarele N linii sunt scrise cate doua numere x y, despartite
+printr-un spatiu, reprezentand coordonatele fiecarui punct in care se va instala
+o antena.
+- Coordonatele punctelor sunt numere naturale cuprinse intre 0 si 30000.
+
+DATE DE IESIRE:
+---------------
+	Fisierul de iesire ANTENE.OUT va contine N linii:
+- pe fiecare linie se vor scrie 3 numere despartite prin cate un spatiu:
+x y c
+-> primele 2 numere x y reprezinta coordonatele unui punct din caroiajul dat, in
+care este permisa amplasarea unei antene, iar ultimul numar (c) va avea valoarea 1
+daca in acel punct s-a amplasat antena firmei DIALOG, respectiv -1 daca s-a ampla-
+sat antena firmei CONNEX
+- Ordinea de scriere a punctelor in fisierul de iesire poate fi oarecare.
+
+RESTRICTII:
+-----------
+N<=8000
+
+EXEMPLU:
+--------
+ANTENE.IN			ANTENE.OUT
+6				1 3 1
+4 1				2 3 -1
+3 2				2 4 1
+1 3				3 4 -1
+2 3				4 1 1
+2 4				3 2 1
+3 4
+
+Timp de executie: 2 secunde/test

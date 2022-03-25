@@ -1,0 +1,65 @@
+
+
+
+		SICN
+	       ------
+
+	Servicul de Informatii al Comisiei Nationale este constituit din
+n agenti (1<=n<=150), care se identifica prin numerele lor de ordine, si
+un agnt sef codificat cu 0. Numerele de ordine sunt (evident) distincte
+si sunt cuprinse intre 1 si n. Din motive de securitate, nu oricare doi
+agenti au contacte directe (informationale !), dar prin contactele di-
+recte existente, oricare doi agenti isi pot comunica informatii. Servi-
+ciul este considerat "forte" daca si numai daca nu contie nici un agent
+prin suprimarea caruia se compromite comunicarea. Comunicarea se com-
+promite daca vor exista agenti care sa nu isi mai poate transmite infor-
+matii, direct sau indirect.
+
+Cerinte:
+--------
+	Scrieti un program care verifica daca SICN este "forte". In plus,
+daca SICN nu este "forte", programul trebuie sa determine:
+- verigile slabe ale SICN (agentii prin a caror suprimare se compromite
+comunicarea);
+- toate grupurile de agenti care sunt "forte" in SICN, maximale cu aceasta
+proprietate.
+
+DATE DE INTRARE:
+----------------
+	Fisierul de intrare SICN.IN contine pe prima linie numarul de a-
+genti n din SICN (exclusiv seful), iar pe fiecare din urmatoarele linii
+cate o pereche de numere:
+x y	unde x,y sunt din multimea {0,1,..,n} sunt separati prin spatii
+	si au semnificatia: "agentul x si agentul y au contact direct".
+
+DATE DE IESIRE:
+---------------
+	Prima linie a fisierului SICN.OUT va contine mesajul FORTE sau mesajul
+NEFORTE, dupa caz.
+	Daca mesajul este NEFORTE atunci fisierul trebuie sa mai contina:
+- pe a doua linie numerele de ordine ale agentilor care constituie veri-
+gile slabe ale serviciului, separate prin cate un spatiu;
+- pe a treia linie, m-numarul de grupuri "forte" in cadrul SICN;
+- pe fiecare din urmatoarele m linii, numerele de ordine ale agentilor
+fiecarui grup "forte", in ordine crescatoare, separate prin spatii.
+
+RESTRICTII:
+-----------
+1<=n<=150
+
+EXEMPLE:
+--------
+SICN.IN			SICN.OUT
+2			FORTE
+0 2
+0 1
+2 1
+
+SICN.IN			SICN.OUT
+3			NEFORTE
+0 1			0 1 '''3
+0 3			0 3
+2 1			1 2
+			0 1
+
+Timp maxim de executie pe test: 1 secunda

@@ -1,0 +1,68 @@
+				Motto: Una-i sa sortezi cartoane,
+				       alta-i sa sortezi vagoane!
+
+
+		MOARA
+	       -------
+
+	La poarta unei moari se afla n saci, etichetati cu numere de
+la 1 la n, asezati in linie, intr-o ordine data. Sacul cu eticheta i
+are greutatea g(i).
+	Morarul cere ucenicului sau sa reaseze sacii in ordinea cresca-
+toare a etichetelor. Cum nu este spatiu de manevra penrtu a schimba
+sacii intre ei, ucenicul ia un scaun si-l aseaza langa pozitia k din sir,
+alege un sac si-l pune pe scaun, ia alt sac si-l muta in locul gol, apoi
+aduce alt sac in locul eliberat de acesta etc. sau aduce sacul de pe
+scaun in locul ramas gol. Repeta procedeul pana cand sacii ajung in or-
+dinea ceruta de morar. Scaunul nu se muta. Efortul depus de ucenic pen-
+tru mutatul unui sac, indiferent daca acesta a fost pus sau nu pe scaun,
+este egal cu produsul dintre greutatea sacului si distanta pe care a
+fost transportat sacul. Distanta dintre 2 saci alaturati este egala cu
+unitatea.
+
+
+Cerinta:
+--------
+	Se cere sa se stabileasca pozitia amplasarii scaunului si ordi-
+nea schimbarii sacilor intre ei, astfel incat ucenicul sa faca un numar
+minim de mutari si efortul depus de acesta sa fie minim.
+
+DATE DE INTRARE:
+----------------
+	Fisierul de intrare MOARA.IN contine pe prima linie numarul de
+saci n si pe liniile urmatoare, ordinea asezarii sacilor, urmata de sirul
+greutatilor sacilor g(1),g(2),..,g(n), unde g(i) este greutatea sacului
+cu eticheta i.
+
+DATE DE IESIRE:
+---------------
+	Iesirea se va face in fisierul MOARA.OUT, care va contine pe
+prima linie:
+p m e	- unde p este pozitia scaunului, m numarul de mutari si e va-
+	  loarea efortului depus,
+si pe fiecare din liniile urmatoare cate o mutare de forma:
+d s	- unde d este pozitia destinatie si s este pozitia sursa, po-
+	  zitia scaunului fiind notata cu 0 (zero!).
+
+RESTRICTII:
+-----------
+2<=N<=10000
+1<=k<=N
+1<=g(i)<=255, pt. 1<=i<=n
+
+EXEMPLU:
+--------
+MOARA.IN			MOARA.OUT
+5				3 5 25
+2 4 3				0 2
+5 1				2 1
+3 5 1 2 4			1 5
+				5 4
+				4 0	(solutia nu este unica!)
+
+Timp maxim de excutie pe test: 1 secunda
+
+
+
+
+	

@@ -1,0 +1,65 @@
+
+
+
+
+			ARBORE
+		       --------
+
+	Se da un arbore format din N noduri in care fiecare nod are aso-
+ciat un numar natural nenul.
+
+Cerinta:
+--------
+	Sa se selcteze din arborele initial un subgraf conex pentru care
+suma valorilor asociate nodurilor este egala cu un numar natural k dat.
+Un subgraf este graful din care se elimina noduri impreuna cu muchiile
+aferente.
+
+DATE DE INTRARE:
+----------------
+
+	Nodurile arborelui sunt numerotate de la 1 la n, radacina fiind
+nodul numerotat cu 1.
+	Fisierul de intrare ARBORE.IN are urmatoarea structura:
+- pe prima linie sunt scrise numerele n si k;
+- pe cea de-a doua linie este scrisa valoarea asociata nodului 1 (ra-
+dacina arborelui);
+- pe cea de-a treia linie sunt scrise doua numere, primul reprezentand
+nodul parinte al nodului 2, iar al doilea reprezentand valoarea asociata
+nodului 2;
+- pe cea de-a patra linie sunt scrise doua numere, primul reprezentand
+nodul parinte al nodului 3, iar al doilea reprezentand valoarea asociata
+nodului 3;
+.....
+- pe linia n+1 sunt scrise doua numere, primul reprezentand nodul parinte
+al nodului n, iar al doilea valoarea asociata nodului n.
+
+DATE DE IESIRE:
+---------------
+
+	Iesirea se va face in fisierul ARBORE.OUT:
+- daca nu exista solutie se va afisa doar numarul -1 pe prima linie;
+- daca exista solutie se vor afisa nodurile ce formeaza un subgraf conex
+care respecta cerinta problemei (cate un singur nod pe fiecare linie).
+
+RESTRICTII:
+-----------
+1<=N<=100
+1<=K<=1000
+1<=valoarea asociata unui nod <=1000
+
+EXEMPLU:
+--------
+ARBORE.IN		ARBORE.OUT
+10 29			2
+30			4
+1 7			5
+2 5			6
+2 10			9
+4 1			10
+4 2
+5 25
+5 2
+5 4
+
+Timp maxim de executie pe test: 3 secunde

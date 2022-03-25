@@ -1,0 +1,50 @@
+
+
+
+		PUNCTE
+	       --------
+
+	Se dau N puncte in plan P1, P2,..,Pn situate pe un cerc si
+un numar natural k.
+
+Cerinte:
+--------
+	Sa se verifice daca se pot construi k segmente distincte cu
+ambele capete in multimea formata din punctele P1,P2,..,Pn, astfel incat
+sa nu se formeze nici un triunghi cu varfurile in aceste puncte. Daca
+exista mai mu;te solutii, se cere una dintre ele.
+
+
+DATE DE INTRARE:
+----------------
+	Fisierul de intrare PUNCTE.IN contine pe prima linie numarul n,
+iar pe a doua linie numarul k.
+
+DATE DE IESIRE:
+---------------
+	Fisierul de iesire PUNCTE.OUT va contine:
+- daca problema nu are solutie, fisierul va contine o singura linie pe
+care se va scrie caracterul '0' (zero).
+- daca problema are solutie, fisierul va contine k+1 linii, dintre care
+pe prima linie se afla caracterul 1 (avand semnificatia ca exista solu-
+tie), iar pe urmatoarele k linii se afla cate doua numere separate prin-
+tr-un spatiu (de forma i j, avand semnificatia ca PiPj reprezinta un seg-
+ment).
+
+RESTRICTII:
+-----------
+1<=N<=300
+1<=K<=300
+
+EXEMPLE:
+---------
+PUNCTE.IN		PUNCTE.OUT
+4			0
+5
+
+PUNCTE.IN		PUNCTE.OUT
+4			1
+2			1 4
+			1 2
+
+Timp maxim de executie pe test: 1 secunda

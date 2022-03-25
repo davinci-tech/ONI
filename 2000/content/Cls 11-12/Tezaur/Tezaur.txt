@@ -1,0 +1,61 @@
+
+
+
+		TEZAUR
+	       --------
+
+	Intr-un document arheologic recent descoperit se face referire
+la un mare tezaur. Datorita faptului ca documentul poate fi interpretat
+in mai multe moduri se face apel la n arheologi care vor studia indepen-
+dent documentul.
+	La terminarea studiului, fiecare arheolog intocmeste o harta pe
+care marcheaza o zona poligonala inchisa si convexa despre care se pre-
+supune ca este locul unde se afla tezaurul.
+	Deoarece fondurile alocate pentru descoperirea tezaurului sunt
+reduse, se ia hotararea sa inceapa cercetarile pe teren doar in zona
+de pe harta, precizata de toti arheologii.
+
+Cerinta:
+--------
+	Cunoscand valoarea n si coordonatele varfurilor zonelor determi-
+nate de arheologi, sa se determine aria suprafetei de pe harta precizata
+de toti arheologii (intersectia celor n zone).
+
+DATE DE INTRARE:
+-----------------
+	Fisierul TEZAUR.IN contine:
+n			- numarul de zone
+m[1]			- nr. de varguri pt. zona primului arheolog
+x(1,1) y(1,1) ..x(1,m[1]),y(1,m[1]) - coordonatele varfurilor primei
+...			  zone (date in sens invers acelor de ceasornic)	
+m[n]
+x(n,1) y(n,1) .. x(n,n) y(n,n) - coordonatele varfurilor celei de-a
+			  n-a zone (date in sens invers acelor de cea-
+			  sornic)
+
+DATE DE IESIRE:
+----------------
+	Pe prima linie a fisierului TEZAUR.OUT se va scrie aria zonei de
+pe harta precizata de toti arheologii, cu doua zecimale. Daca nu exista
+suprafata comuna zonelor celor n arheologi, in fisierul de iesire se va
+scrie numarul 0.
+
+EXEMPLU:
+---------
+TEZAUR.IN				TEZAUR.OUT
+3					400.00
+4-20 30 -20 -20 40 -20 40 30
+5
+10 80 10 -30 60 -50 100 60 70 80
+4
+20 10 70 10 70 60 20 60
+
+RESTRICTII:
+-----------
+- 1<=n<=30
+- 3<=m[i]<=20, i=1,2,..,n
+- coordonatele varfurilor zonelor sunt numere intregi din intervalul
+[-1000,1000]
+- numarul din fisierul de iesire se va scrie cu 2 zecimale
+
+Timp maxim de executie pe test: 1 secunda

@@ -1,0 +1,39 @@
+Harta corecta !  OK !!!
+Harta corecta !  Fisierul de iesire nu exista !
+Harta corecta !  Caractere ilegale !
+Harta corecta !  Muchie inexistenta !
+Harta corecta !  Numar de muchii gresit !
+Harta corecta !  Cost bun, muchii gresite !
+Harta corecta !  Rezultatul nu este un arbore !
+
+Fisierul de iesire nu exista !  OK !!!
+Fisierul de iesire nu exista !  Fisierul de iesire nu exista !
+Fisierul de iesire nu exista !  Caractere ilegale !
+Fisierul de iesire nu exista !  Muchie inexistenta !
+Fisierul de iesire nu exista !  Numar de muchii gresit !
+Fisierul de iesire nu exista !  Cost bun, muchii gresite !
+Fisierul de iesire nu exista !  Rezultatul nu este un arbore !
+
+Caractere ilegale !  OK !!!
+Caractere ilegale !  Fisierul de iesire nu exista !
+Caractere ilegale !  Caractere ilegale !
+Caractere ilegale !  Muchie inexistenta !
+Caractere ilegale !  Numar de muchii gresit !
+Caractere ilegale !  Cost bun, muchii gresite !
+Caractere ilegale !  Rezultatul nu este un arbore !
+
+Dimensiunea hartii este incorecta !  OK !!!
+Dimensiunea hartii este incorecta !  Fisierul de iesire nu exista !
+Dimensiunea hartii este incorecta !  Caractere ilegale !
+Dimensiunea hartii este incorecta !  Muchie inexistenta !
+Dimensiunea hartii este incorecta !  Numar de muchii gresit !
+Dimensiunea hartii este incorecta !  Cost bun, muchii gresite !
+Dimensiunea hartii este incorecta !  Rezultatul nu este un arbore !
+
+Harta gresita !  OK !!!
+Harta gresita !  Fisierul de iesire nu exista !
+Harta gresita !  Caractere ilegale !
+Harta gresita !  Muchie inexistenta !
+Harta gresita !  Numar de muchii gresit !
+Harta gresita !  Cost bun, muchii gresite !
+Harta gresita !  Rezultatul nu este un arbore !

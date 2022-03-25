@@ -1,0 +1,95 @@
+
+
+
+
+
+		MOSTENIRE
+	       -----------
+
+	Ministrul de Finante din Simot a decis sa puna impozit pe mostenirile
+duble.
+	In registrul de stare civila (cu ajutorul caruia se va stabili cate impo-
+zite se pot incasa) apar n persoane, numerotate de la 1 la n. O persoana care nu
+figureaza ca mostenitor al nici unei persoane este identificata prin numele de "stra-
+mos". O persoana care este mostenitor direct al cuiva, dar nu are nici un mostenitor
+(direct sau indirect) este denumita "terminal". Celelalte persoane care mostenesc
+de la una sau mai multe si au unul sau mai multi mostenitori sunt denumiti "tranzi-
+enti". Numim "succesiune de mostenitori" o secventa de persoane p1,p2,..,pk, unde p1
+este stramos, p2,..,p(k-1) sunt tranzienti, pk este terminal, iar p(i) este mosteni-
+torul direct al lui p(i-1), pentru oricare i=2,..,k.
+
+	Se impoziteaza doar persoanele terminale, beneficiare de mosteniri duble,
+stiind ca o persoana plateste cate un impozit pentru fiecare mostenire dubla. Numim
+"mostenire dubla" a unui terminal doua succesiuni distincte de mostenitori care au
+acelasi stramos. Se considera ca doua succesiuni sunt distincte daca exista cel putin
+o persoana tranzienta care apare intr-o succesiune si nu apare in cealalata.
+	Daca persoana i este mostenitorul direct sau indirect al persoanei j, nu se
+poate intampla ca persoana j sa fie mostenitor direct sau indirect al persoanei i.
+
+Cerinta:
+--------
+	Scrieti un program care stabileste numarul total de impozite care pot fi incasate.
+
+DATE DE INTRARE:
+----------------
+	Prima linie a fisierului de intrare MOST.IN contine numarul de persoane n. De pe
+urmatoarele n linii se citesc, pentru fiecare persoana numerele de ordine ale persoanelor
+de la care persoana respectiva a mostenit direct (de pe linia i+1 se citesc numerele de
+ordine ale persoanele de la care a mostenit direct persoana i). Fiecare linie se termina
+cu zero.
+
+DATE DE IESIRE:
+---------------
+	In fisierul de iesire MOST.OUT se va scrie numarul total de impozite.
+
+RESTRICTII:
+-----------
+* N<=200
+* Rezultatul se incadreaza intr-un intreg pe 64 de biti (observatia asta lipsea din enuntul original, dar era adevarat pt testele folosite.. altfel poti genera si teste unde sunt necesare numere mari).
+
+
+EXEMPLE:
+--------
+
+MOST.IN		MOST.OUT
+14		5
+0
+0		Explicatii:
+0	        -----------
+0			Sunt 5 impozite pe 5 mosteniri duble.
+1 0		Persoana 11 a mostenit de la persoanele 6 si 7 (care au persoana 1 ca
+5 0             stramos), al doilea impozit il plateste tot persoana 11 datorita mos-
+8 0		tenirilor de la persoanele 6 si 12 (care au persoana 1 ca stramos), al
+1 2 0		treilea impozit il va plati tot persoana 11 datorita mostenirilor pri-
+1 3 0		mite de la persoanele 7 si 12 (care au persoana 1 ca stramos), al 4-lea
+3 4 0		impozit se plateste de persoana 14 care a mostenit de la persoanele 7
+6 7 12 0	si 12 (care au persoana 1 ca stramos) si al 5-lea impozit, de asemenea
+9 0		de persoana 14 care mosteneste de la persoanele 12 si 13 (care au per-
+10 0		soana 3 ca stramos).
+7 12 13 0  
+
+MOST.IN		MOST.OUT
+14		0
+0
+0
+0
+0
+1 0
+5 0
+8 0
+2 0
+3 0
+4 0
+6 7 0
+9 0
+10 0
+12 13 0
+
+MOST.IN		MOST.OUT
+4		1 (platit de persoana 4 pentru care cele 2 succesiuni distincte
+0		   sunt: 1,2,3,4 si 1,3,4, stramosul comun fiind persoana 1).
+1 0
+1 2 0
+3 0
+
+Timp maxim de executie: 2 secunde/test
