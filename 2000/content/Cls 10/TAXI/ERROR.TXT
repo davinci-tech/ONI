@@ -1,5 +1,0 @@
-OK !!!
-Caractere ilegale !
-Cost incorect !
-Numar de km incorect !
-Costul nu corespunde cu cel afisat
